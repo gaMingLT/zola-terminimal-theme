@@ -65,9 +65,16 @@ a.read-more:active {
   display: inline-flex;
   background: none;
   box-shadow: none;
-  padding: 0;
+  // padding: 0;
   margin: 20px 0;
   max-width: 100%;
+
+  // Custom read more button styling
+  background-color: var(--accent);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+
 }
 
 .code-toolbar {
