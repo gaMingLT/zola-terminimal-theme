@@ -64,8 +64,21 @@
     </div>
 
     {{ post_macros::tags(page=page) }}
+
+    {{ post_macros::reading_time(page=page) }} 
 {% endmacro header %}
 
+<!-- Custom reading time macro indicator -->
+{% macro reading_time(page) %}
+    {%- if page.taxonomies and page.taxonomies.tags %}
+        <span class="post-tags-inline">
+            ::
+            {%- if page.reading_time %}
+                🖹 {{ page.reading_time }} Minutes
+            {%- endif %}             
+        </span>
+    {% endif -%}
+{% endmacro reading_time %}
 
 {% macro list_posts(pages) %}
     <ul>
