@@ -1,0 +1,26 @@
+
+a[download] {
+  display: block;
+  max-width: 100%;
+
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.25rem;
+  color: black;
+  font-weight: bold;
+  background-color: var(--accent);
+  margin: auto;
+  width: max-content;
+
+  &.left {
+    margin-right: auto;
+  }
+
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+}
